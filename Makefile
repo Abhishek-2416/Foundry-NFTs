@@ -40,7 +40,7 @@ ifeq ($(findstring --network sepolia,$(ARGS)),--network sepolia)
 endif
 
 deploy:
-	@forge script script/DeployBasicNft.s.sol:DeployBasicNft $(NETWORK_ARGS)
+	@forge script script/DeployBasicNFT.s.sol:DeployBasicNFT $(NETWORK_ARGS)
 
 mint:
 	@forge script script/Interactions.s.sol:MintBasicNFT ${NETWORK_ARGS}
