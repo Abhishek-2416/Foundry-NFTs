@@ -40,6 +40,15 @@ contract TestBasicNFT is Test{
         );
     }
 
+    function testTheSymbolIsCorrect() external {
+        string memory expectedSymbol = "DOG";
+        string memory actualSymbol = basicNFT.symbol();
+        assertEq(
+            keccak256(abi.encodePacked(expectedSymbol)),
+            keccak256(abi.encodePacked(actualSymbol))
+        );
+    }
+
     /**
      * @notice Here we are checking if it can Mint and NFT and the NFT gets shown in the user account
      * @dev In this first we mint a basic NFT and check if the balance of user increases
