@@ -66,3 +66,6 @@ NDkuNSA0NS4zLTg4LjYgOTUuOC04OC42czkyIDM5LjEgOTUuOCA4OC42Yy4zIDQuMiAzLjkgNy40
 IDguMSA3LjRINjY0YTggOCAwIDAgMCA4LTguNEM2NjcuNiA2MDAuMyA1OTcuNSA1MzMgNTEyIDUz
 M3ptMTI4LTExMmE0OCA0OCAwIDEgMCA5NiAwIDQ4IDQ4IDAgMSAwLTk2IDB6Ii8+Cjwvc3ZnPgo=
 
+6. So now we were passing the ImageURI and now like we did in the PUG NFT example we need to pass in the tokenURI which is basically the token Metadata which we can do using the Base64 , we can do it on change using the Openzeppelin base64 pacakage which will transform bytes32 data to Base64 string 
+7. 
+
